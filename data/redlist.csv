@@ -1,0 +1,85 @@
+id,tname,tauthor,worms_id,rank_name,phylum,class,order,family,genus,species,redlist,gisd,hab,status
+400503,Amblyraja georgiana,"(Norman, 1938)",234607,Species,Chordata,Elasmobranchii,Rajiformes,Rajidae,Amblyraja,Amblyraja georgiana,t,,,DD
+405574,Architeuthis dux,"Steenstrup, 1857",342218,Species,Mollusca,Cephalopoda,Oegopsida,Architeuthidae,Architeuthis,Architeuthis dux,t,,,LC
+405677,Arctocephalus gazella,"(Peters, 1875)",231404,Species,Chordata,Mammalia,Carnivora,Otariidae,Arctocephalus,Arctocephalus gazella,t,,,LC
+409234,Balaenoptera bonaerensis,"Burmeister, 1867",231405,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera,Balaenoptera bonaerensis,t,,,DD
+409235,Balaenoptera borealis,"Lesson, 1828",137088,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera,Balaenoptera borealis,t,,,EN
+409238,Balaenoptera musculus,"(Linnaeus, 1758)",137090,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera,Balaenoptera musculus,t,,,EN
+409240,Balaenoptera physalus,"(Linnaeus, 1758)",137091,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera,Balaenoptera physalus,t,,,EN
+410786,Bathyraja meridionalis,"Stehmann, 1987",234792,Species,Chordata,Elasmobranchii,Rajiformes,Arhynchobatidae,Bathyraja,Bathyraja meridionalis,t,,,DD
+410855,Bathyteuthis abyssicola,"Hoyle, 1885",138848,Species,Mollusca,Cephalopoda,Decapodiformes incertae sedis,Bathyteuthidae,Bathyteuthis,Bathyteuthis abyssicola,t,,,LC
+410925,Batoteuthis skolops,"Young & Roper, 1968",325293,Species,Mollusca,Cephalopoda,Oegopsida,Batoteuthidae,Batoteuthis,Batoteuthis skolops,t,,,LC
+411403,Berardius arnuxii,"Duvernoy, 1851",242606,Species,Chordata,Mammalia,Cetartiodactyla,Ziphiidae,Berardius,Berardius arnuxii,t,,,DD
+412784,Brachioteuthis riisei,"(Steenstrup, 1882)",138852,Species,Mollusca,Cephalopoda,Oegopsida,Brachioteuthidae,Brachioteuthis,Brachioteuthis riisei,t,,,DD
+423067,Cirroctopus antarctica,"(Kubodera & Okutani, 1986)",342258,Species,Mollusca,Cephalopoda,Octopoda,Cirroctopodidae,Cirroctopus,Cirroctopus antarctica,t,,,LC
+440813,Eubalaena australis,"(Desmoulins, 1822)",220222,Species,Chordata,Mammalia,Cetartiodactyla,Balaenidae,Eubalaena,Eubalaena australis,t,,,LC
+441388,Eudyptes chrysolophus,"(Brandt, 1837)",212658,Species,Chordata,Aves,Sphenisciformes,Spheniscidae,Eudyptes,Eudyptes chrysolophus,t,,,VU
+444665,Fulmarus glacialoides,"(Smith, 1840)",212638,Species,Chordata,Aves,Procellariiformes,Procellariidae,Fulmarus,Fulmarus glacialoides,t,,,LC
+445409,Galiteuthis glacialis,"(Chun, 1906)",325297,Species,Mollusca,Cephalopoda,Oegopsida,Cranchiidae,Galiteuthis,Galiteuthis glacialis,t,,,LC
+446726,Globicephala melas,"(Traill, 1809)",137097,Species,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Globicephala,Globicephala melas,t,,,DD
+450915,Halobaena caerulea,"(Gmelin, 1789)",212645,Species,Chordata,Aves,Procellariiformes,Procellariidae,Halobaena,Halobaena caerulea,t,,,LC
+453841,Hexanchus griseus,"(Bonnaterre, 1788)",105833,Species,Chordata,Elasmobranchii,Hexanchiformes,Hexanchidae,Hexanchus,Hexanchus griseus,t,,,NT
+454494,Histioteuthis eltaninae,"N. Voss, 1969",341867,Species,Mollusca,Cephalopoda,Oegopsida,Histioteuthidae,Histioteuthis,Histioteuthis eltaninae,t,,,LC
+455778,Hydrurga leptonyx,"(Blainville, 1820)",231417,Species,Chordata,Mammalia,Carnivora,Phocidae,Hydrurga,Hydrurga leptonyx,t,,,LC
+456060,Hyperoodon planifrons,"Flower, 1882",343900,Species,Chordata,Mammalia,Cetartiodactyla,Ziphiidae,Hyperoodon,Hyperoodon planifrons,t,,,LC
+457793,Isurus oxyrinchus,"Rafinesque, 1810",105839,Species,Chordata,Elasmobranchii,Lamniformes,Lamnidae,Isurus,Isurus oxyrinchus,t,,,VU
+458808,Kondakovia longimana,"Filippova, 1972",325308,Species,Mollusca,Cephalopoda,Oegopsida,Onychoteuthidae,Kondakovia,Kondakovia longimana,t,,,LC
+458871,Krefftichthys anderssoni,"(Lönnberg, 1905)",234641,Species,Chordata,Actinopteri,Myctophiformes,Myctophidae,Krefftichthys,Krefftichthys anderssoni,t,,,LC
+460238,Larus dominicanus,"Lichtenstein, 1823",212624,Species,Chordata,Aves,Charadriiformes,Laridae,Larus,Larus dominicanus,t,,,LC
+462184,Leptonychotes weddellii,"(Lesson, 1826)",195932,Species,Chordata,Mammalia,Carnivora,Phocidae,Leptonychotes,Leptonychotes weddellii,t,,,LC
+466723,Macronectes giganteus,"(Gmelin, 1789)",212636,Species,Chordata,Aves,Procellariiformes,Procellariidae,Macronectes,Macronectes giganteus,t,,,LC
+466724,Macronectes halli,"Mathews, 1912",212637,Species,Chordata,Aves,Procellariiformes,Procellariidae,Macronectes,Macronectes halli,t,,,LC
+470185,Mesothuria bifurcata,"Hérouard, 1901",732428,Species,Echinodermata,Holothuroidea,Aspidochirotida,Mesothuriidae,Mesothuria,Mesothuria bifurcata,t,,,DD
+471888,Mirounga leonina,"(Linnaeus, 1758)",231413,Species,Chordata,Mammalia,Carnivora,Phocidae,Mirounga,Mirounga leonina,t,,,LC
+480963,Ommatophoca rossii,"Gray, 1844",231412,Species,Chordata,Mammalia,Carnivora,Phocidae,Ommatophoca,Ommatophoca rossii,t,,,LC
+483005,Orcinus orca,"(Linnaeus, 1758)",137102,Species,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Orcinus,Orcinus orca,t,,,DD
+484202,Pachyptila belcheri,"(Mathews, 1912)",212646,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pachyptila,Pachyptila belcheri,t,,,LC
+484207,Pachyptila turtur,"(Kuhl, 1820)",212648,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pachyptila,Pachyptila turtur,t,,,LC
+491433,Phoebetria fusca,"(Hilsenberg, 1822)",212632,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Phoebetria,Phoebetria fusca,t,,,EN
+491435,Phoebetria palpebrata,"(Forster, 1785)",212631,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Phoebetria,Phoebetria palpebrata,t,,,NT
+492276,Physeter macrocephalus,"Linnaeus, 1758",137119,Species,Chordata,Mammalia,Cetartiodactyla,Physeteridae,Physeter,Physeter macrocephalus,t,,,VU
+497830,Procellaria aequinoctialis,"Linnaeus, 1758",212651,Species,Chordata,Aves,Procellariiformes,Procellariidae,Procellaria,Procellaria aequinoctialis,t,,,VU
+497831,Procellaria cinerea,"Gmelin, 1789",212652,Species,Chordata,Aves,Procellariiformes,Procellariidae,Procellaria,Procellaria cinerea,t,,,NT
+500494,Pseudostichopus mollis,"Théel, 1886",152565,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Pseudostichopus,Pseudostichopus mollis,t,,,DD
+500801,Psychroteuthis glacialis,"Thiele, 1920",325312,Species,Mollusca,Cephalopoda,Oegopsida,Psychroteuthidae,Psychroteuthis,Psychroteuthis glacialis,t,,,LC
+501018,Pterodroma inexpectata,"(Forster, 1844)",225761,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pterodroma,Pterodroma inexpectata,t,,,NT
+501019,Pterodroma lessonii,"(Garnot, 1826)",212642,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pterodroma,Pterodroma lessonii,t,,,LC
+501020,Pterodroma leucoptera,"(Gould, 1844)",225774,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pterodroma,Pterodroma leucoptera,t,,,VU
+501021,Pterodroma macroptera,"(Smith, 1840)",212644,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pterodroma,Pterodroma macroptera,t,,,LC
+501861,Pygoscelis adeliae,"(Hombron & Jacquinot, 1841)",225757,Species,Chordata,Aves,Sphenisciformes,Spheniscidae,Pygoscelis,Pygoscelis adeliae,t,,,NT
+502410,Racovitzia glacialis,"Dollo, 1900",234799,Species,Chordata,Actinopteri,Perciformes,Bathydraconidae,Racovitzia,Racovitzia glacialis,t,,,LC
+513852,Sterna hirundo,"Linnaeus, 1758",137162,Species,Chordata,Aves,Charadriiformes,Sternidae,Sterna,Sterna hirundo,t,,,LC
+518503,Thalassarche bulleri,"(Rothschild, 1893)",225776,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Thalassarche,Thalassarche bulleri,t,,,NT
+518504,Thalassarche carteri,"(Rothschild, 1903)",225758,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Thalassarche,Thalassarche carteri,t,,,EN
+518507,Thalassarche chrysostoma,"(Forster, 1785)",225760,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Thalassarche,Thalassarche chrysostoma,t,,,EN
+535486,Bathyplotes gourdoni,"(Vaney, 1914)",174125,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Bathyplotes,Bathyplotes gourdoni,t,,,DD
+564817,Bathyplotes bongraini,"Vaney, 1914",174113,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Bathyplotes,Bathyplotes bongraini,t,,,DD
+602214,Aptenodytes forsteri,"Gray, 1844",225773,Species,Chordata,Aves,Sphenisciformes,Spheniscidae,Aptenodytes,Aptenodytes forsteri,t,,,NT
+619901,Daption capense,"(Linnaeus, 1758)",212640,Species,Chordata,Aves,Procellariiformes,Procellariidae,Daption,Daption capense,t,,,LC
+621316,Diomedea exulans,"Linnaeus, 1758",212583,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Diomedea,Diomedea exulans,t,,,VU
+625820,Euphausia superba,"Dana, 1850",236217,Species,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Euphausia,Euphausia superba,t,,,LC
+627420,Fregetta tropica,"(Gould, 1844)",212696,Species,Chordata,Aves,Procellariiformes,Hydrobatidae,Fregetta,Fregetta tropica,t,,,LC
+628066,Galaxias maculatus,"(Jenyns, 1842)",280811,Species,Chordata,Actinopteri,Osmeriformes,Galaxiidae,Galaxias,Galaxias maculatus,t,,,LC
+637025,Lagenorhynchus cruciger,"(Quoy & Gaimard, 1824)",383563,Species,Chordata,Mammalia,Cetartiodactyla,Delphinidae,Lagenorhynchus,Lagenorhynchus cruciger,t,,,LC
+645385,Molpadiodemas morbillus,"O'Loughlin & Ahearn, 2005",389597,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Molpadiodemas,Molpadiodemas morbillus,t,,,DD
+645388,Molpadiodemas translucens,"O'Loughlin & Ahearn, 2005",389600,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Molpadiodemas,Molpadiodemas translucens,t,,,DD
+650174,Oceanites oceanicus,"(Kuhl, 1820)",137190,Species,Chordata,Aves,Procellariiformes,Hydrobatidae,Oceanites,Oceanites oceanicus,t,,,LC
+652943,Pachyptila vittata,"(Forster, 1777)",212647,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pachyptila,Pachyptila vittata,t,,,LC
+653007,Pagodroma nivea,"(Forster, 1777)",225772,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pagodroma,Pagodroma nivea,t,,,LC
+655774,Pelecanoides urinatrix,"(Gmelin, 1789)",344007,Species,Chordata,Aves,Procellariiformes,Pelecanoididae,Pelecanoides,Pelecanoides urinatrix,t,,,LC
+662801,Pseudostichopus peripatus,"(Sluiter, 1901)",529641,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Pseudostichopus,Pseudostichopus peripatus,t,,,DD
+663156,Pterodroma mollis,"(Gould, 1844)",137199,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pterodroma,Pterodroma mollis,t,,,LC
+670762,Sterna paradisaea,"Pontoppidan, 1763",137165,Species,Chordata,Aves,Charadriiformes,Sternidae,Sterna,Sterna paradisaea,t,,,LC
+670768,Sterna vittata,"Gmelin, 1789",225766,Species,Chordata,Aves,Charadriiformes,Sternidae,Sterna,Sterna vittata,t,,,LC
+673622,Thalassarche melanophris,"(Temminck, 1828)",343995,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Thalassarche,Thalassarche melanophris,t,,,NT
+673700,Thalassoica antarctica,"(Gmelin, 1789)",212639,Species,Chordata,Aves,Procellariiformes,Procellariidae,Thalassoica,Thalassoica antarctica,t,,,LC
+674216,Thymopsis nilenta,"Holthuis, 1974",382877,Species,Arthropoda,Malacostraca,Decapoda,Nephropidae,Thymopsis,Thymopsis nilenta,t,,,LC
+698592,Megaptera novaeangliae,"(Borowski, 1781)",137092,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Megaptera,Megaptera novaeangliae,t,,,LC
+739485,Balaenoptera acutorostrata,"Lacépède, 1804",137087,Species,Chordata,Mammalia,Cetartiodactyla,Balaenopteridae,Balaenoptera,Balaenoptera acutorostrata,t,,,LC
+752052,Molpadiodemas crinitus,"O'Loughlin & Ahearn, 2005",389594,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Molpadiodemas,Molpadiodemas crinitus,t,,,DD
+752054,Molpadiodemas villosus,"(Théel, 1886)",529559,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Molpadiodemas,Molpadiodemas villosus,t,,,LC
+752055,Molpadiodemas violaceus,"(Théel, 1886)",529560,Species,Echinodermata,Holothuroidea,Aspidochirotida,Synallactidae,Molpadiodemas,Molpadiodemas violaceus,t,,,LC
+754239,Pachyptila salvini,"(Mathews, 1912)",225961,Species,Chordata,Aves,Procellariiformes,Procellariidae,Pachyptila,Pachyptila salvini,t,,,LC
+761166,Thalassarche cauta,"(Gould, 1841)",225902,Species,Chordata,Aves,Procellariiformes,Diomedeidae,Thalassarche,Thalassarche cauta,t,,,NT
+849511,Stauroteuthis gilchristi,"(Robson, 1924)",410399,Species,Mollusca,Cephalopoda,Octopoda,Cirroteuthidae,Stauroteuthis,Stauroteuthis gilchristi,t,,,DD
+1019772,Aphrodroma brevirostris,"(Lesson, 1831)",344020,Species,Chordata,Aves,Procellariiformes,Procellariidae,Aphrodroma,Aphrodroma brevirostris,t,,,LC

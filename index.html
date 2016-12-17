@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Data visualization </title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/dcjs/dc.css">
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="bower_components/dc-addons/dist/leaflet-map/dc-leaflet-legend.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/crossfilter/crossfilter.min.js"></script>
+    <script src="bower_components/dcjs/dc.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="bower_components/color-brewer.js"></script>
+    <!-- <script src="../dist/leaflet-map/dc-leaflet.js"></script> -->
+    <!-- use src for testing -->
+    <script src="bower_components/dc-addons/src/scripts/base-map-chart.js"></script>
+    <script src="bower_components/dc-addons/src/scripts/base-leaflet-chart.js"></script>
+    <script src="bower_components/dc-addons/src/scripts/leaflet-marker-chart.js"></script>
+    <script src="bower_components/dc-addons/src/scripts/leaflet-choropleth-chart.js"></script>
+    <script src="bower_components/dc-addons/src/scripts/leaflet-legend.js"></script>
+
+    <style>
+    h4 {
+      text-align: center
+    }
+      .map {
+        width:1200px;
+        height:350px;
+        margin:20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2> Southern Ocean </h2>
+        <div id="chart-map">
+          <p class="lead"> Visualizing occurrence records </p> 
+          <div class="map"></div>
+        </div>
+      </div>
+      <span class="reset" style="display: none;"></span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="dc-chart col-md-4">
+            <h4> Depth </h4>
+            <div id="bar-chart-depth"></div>
+          </div>
+          <div class="dc-chart col-md-4">
+            <h4> Year </h4>
+            <div id="bar-chart-year"></div>
+          </div>
+          <div class="dc-chart col-md-4">
+            <h4> Phylum </h4>
+            <div id="pie-chart-phylum"></div>
+          </div>
+          <!-- <div class="dc-chart col-md-3">
+            <h4> Red list </h4>
+            <div id="pie-chart-redlist"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+
+    /* load data */
+    d3.csv("data/southernOcean_redlist.csv", function(data) {
+      initCrossfilter(data);
+    });
+
+
+    function initCrossfilter(data) {
+
+
+      /* set crossfilter */
+      var xf = crossfilter(data),
+
+      /* dimension */
+      locCount      = xf.dimension(function(d) { return [+d.latitude, +d.longitude]; }),
+      depthCount    = xf.dimension(function(d) { return +d.depth; }),
+      yearCount     = xf.dimension(function(d) { return +d.yearcollected; }),
+      phylumCount   = xf.dimension(function(d) { return d.phylum; }),
+      // redlistCount  = xf.dimension(function(d) { return d.redstatus; }),
+
+
+      /* group per dimension */
+      locCountGroup     = locCount.group().reduceSum(function(d){return d.individualcount;}),
+      depthCountGroup   = depthCount.group().reduceSum(function(d){return d.individualcount;}),
+      yearCountGroup    = yearCount.group().reduceSum(function(d){return d.individualcount;}),
+      phylumCountGroup  = phylumCount.group().reduceSum(function(d){return d.individualcount;});
+      // redlistCountGroup = redlistCount.group().reduceSum(function(d){return d.individualcount;});
+      // not straight forward to reduce to the number of unique red list species, see: https://github.com/square/crossfilter/wiki/API-Reference#group_reduce
+
+
+      /* chartMap: map chart, latitude, longitude, individual count 
+      from dc-addons */
+      var markerchart = dc.leafletMarkerChart("#chart-map .map")
+        .dimension(locCount)
+        .group(locCountGroup)
+        .fitOnRender(false)
+        .popupOnHover(true)
+        .cluster(true)
+        .zoom(1)
+        .center([-50,-25])
+        .tiles(function(map){
+          return L.tileLayer(
+            'http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}',
+            {attribution: 'LSCE &copy; 2016 | Baselayer &copy; ArcGis'}).addTo(map);
+        });
+
+
+      /* bar chart: individual count vs depth 
+      values in x-axis are rotated -45 deg in dc.css file */
+      var depthBarChart = dc.barChart("#bar-chart-depth")
+        .margins({left: 50, top: 20, right: 20, bottom: 50})
+        .height(250)
+        .width(300)
+        .dimension(depthCount)
+        .group(depthCountGroup)
+        .brushOn(true)
+        .x(d3.scale.log().domain([1,10000]))
+        .xUnits(function(){return 40;}) // larger bin width
+        .xAxisLabel("Depth (m)")
+        .yAxisLabel("Individual count")
+        // .elasticX(true)   // elasticX or elasticY overwrite log scale
+        .elasticY(true)
+        .yAxis().tickFormat(d3.format("e"));
+
+
+
+      /* bar chart: individual count vs year */
+      var yearBarChart = dc.barChart("#bar-chart-year")
+        .margins({left: 50, top: 20, right: 20, bottom: 50})
+        .height(250)
+        .width(300)
+        .dimension(yearCount)
+        .group(yearCountGroup)
+        .x(d3.scale.linear().domain([1950,2020]))
+        .xUnits(function(){return 70;})
+        .brushOn(true)
+        .xAxisLabel("Year collected")
+        .yAxisLabel("Individual count")
+        .elasticY(true);        
+
+      yearBarChart // this attribute has to be separated from the chain above otherwise it will not work
+        .xAxis().tickFormat(d3.format("04d")) // remove comma from year
+
+      yearBarChart
+        .yAxis().tickFormat(d3.format("e")); // to make y-axis in exponential form
+
+
+
+      /* pie chart: phylum and individual count */  
+      var phylumPieChart = dc.pieChart("#pie-chart-phylum")
+        .height(200)
+        .width(380)
+        .slicesCap(8)
+        .innerRadius(30)
+        .dimension(phylumCount)
+        .group(phylumCountGroup)
+        .legend(dc.legend());
+
+
+
+
+      dc.renderAll();
+    }
+
+
+    </script>
+  </body>
+</html>
