@@ -129,7 +129,7 @@
         .dimension(depthCount)
         .group(depthCountGroup)
         .brushOn(true)
-        .x(d3.scale.log().domain([1,10000]))
+        .x(d3.scale.linear().domain([0,10000])) // log scale failed to work with coordinates (e.g. select point on map, no individual count is shown in depth bar chart)
         .xUnits(function(){return 40;}) // larger bin width
         .xAxisLabel("Depth (m)")
         .yAxisLabel("Individual count")
